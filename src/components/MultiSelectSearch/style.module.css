@@ -1,0 +1,89 @@
+.multiSelectSearch {
+    width: 80%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.items-with-input {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid grey;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 10;
+    padding: 4px 8px;
+    margin-bottom: 1rem;
+}
+
+.items-with-input>input {
+    z-index: 999;
+    border: none;
+    flex: 1;
+    padding: 14px 8px;
+    font-size: 1rem;
+}
+
+.items-with-input>input:focus {
+    outline: none;
+}
+
+.item {
+    border: 3px solid black;
+    border-radius: 25px;
+    padding: 3px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+}
+
+.item>img {
+    margin: 0 4px;
+}
+
+.item.selected {
+    border-color: red;
+}
+
+.item>span {
+    margin: 0 4px;
+    padding: 4px 6px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.item>span:hover {
+    background-color: #ffffff41;
+}
+
+.suggestions {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin: 0 auto;
+    height: 20rem;
+    overflow: auto;
+}
+
+.suggestion {
+    border: 1px solid black;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.suggestion>img {
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+.suggestion.active,
+.suggestion:hover {
+    background-color: #eee;
+}
