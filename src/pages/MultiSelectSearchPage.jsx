@@ -25,7 +25,7 @@ export default function MultiSelectSearchPage() {
         <ul>
           <li>Press Backspace to focus and remove selected items</li>
           <li>Use up down arrow keys to traverse over the suggestions</li>
-          <li>Press enter over selected suggestion to select it</li>
+          <li>Press enter over active suggestion to select it</li>
         </ul>
       </div>
     </div>

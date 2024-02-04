@@ -44,6 +44,7 @@ export function MultiSelectSearch(props) {
     setFocusedItem(null);
     setSelectedItems((prev) => prev.filter((old) => old.name !== item.name));
     setSuggestions((prev) => prev.concat(item));
+    inputRef.current.focus();
   };
 
   const keyPressHandler = (event) => {

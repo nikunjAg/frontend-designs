@@ -75,18 +75,20 @@
     margin: 0 auto;
     height: 20rem;
     overflow-y: auto;
+    border: 1px solid gray;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    border: 1px solid gray;
 }
 
 .suggestion {
-    border-bottom: 1px solid black;
     padding: 10px;
-    /* margin-bottom: 5px; */
     cursor: pointer;
     display: flex;
     align-items: center;
+}
+
+.suggestion:not(:last-of-type) {
+    border-bottom: 1px solid black;
 }
 
 .suggestion>img {
