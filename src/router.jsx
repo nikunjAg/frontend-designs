@@ -1,18 +1,27 @@
-import { createBrowserRouter } from "react-router-dom";
+import { Suspense, lazy } from "react";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-import MultiSelectSearchPage from "./pages/MultiSelectSearchPage";
-import LandingPage from "./pages/LandingPage";
-
+const LandingPage = lazy(() => import("./pages/LandingPage"));
+const MultiSelectSearchPage = lazy(() => import("./pages/MultiSelectSearchPage"));
+const InfiniteScrollPage = lazy(() => import("./pages/InfiniteScrollPage"));
 
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <LandingPage />
+        element: <Suspense fallback={<p>Loading...</p>} ><LandingPage /></Suspense>
     },
     {
         path: '/multi-select-search',
-        element: <MultiSelectSearchPage />
-    }
+        element: <Suspense><MultiSelectSearchPage /></Suspense>,
+    },
+    {
+        path: '/infinite-scroll',
+        element: <Suspense fallback={<p>Loading...</p>} ><InfiniteScrollPage /></Suspense>
+    },
 ]);
 
-export default router;
+function Router() {
+    return <RouterProvider router={router} />
+}
+
+export default Router;
