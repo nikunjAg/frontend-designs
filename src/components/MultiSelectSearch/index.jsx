@@ -35,6 +35,9 @@ export function MultiSelectSearch(props) {
     setActiveSuggestion(0);
     setSearchValue("");
     inputRef.current.focus();
+    setTimeout(() => {
+      inputRef.current.scrollIntoView({ behavior: 'smooth' });
+    }, 0);
   };
 
   const removeSelectionHandler = (item) => {
@@ -81,7 +84,7 @@ export function MultiSelectSearch(props) {
   return (
     <div className={classes.multiSelectSearch} >
       <h1>Multi Select Search</h1>
-      <div className={classes['items-with-input']}>
+      <div className={classes.itemsWithInput}>
         <SelectedItems
           items={selectedItems}
           focusedItem={focusedItem}
