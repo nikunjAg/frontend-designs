@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 
 import InfiniteScroll from "../components/InfiniteScroll";
-import Post from "../components/Post";
+import Post from "../components/Post/Post";
 import useThrottle from "../hooks/useThrottle";
 
 const fetchData = async (skip = 0, limit = 10) => {

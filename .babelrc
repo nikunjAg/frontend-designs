@@ -1,0 +1,10 @@
+{
+    // Will not work if we won't import React in jsx files
+	// "plugins": [
+	//     "@babel/plugin-transform-react-jsx"
+	// ],
+	"presets": [
+		["@babel/preset-env", { "targets": { "node": "current" } }],
+		["@babel/preset-react", { "runtime": "automatic" }]
+	]
+}

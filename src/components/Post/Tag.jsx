@@ -5,7 +5,7 @@ import classes from './style.module.css';
 const Tag = (props) => {
 	const { name } = props;
 
-	return <span className={classes.tag} >{name}</span>;
+	return <span data-testid="tag_name" className={classes.tag} >{name}</span>;
 };
 
 export default Tag;

@@ -8,15 +8,15 @@ const Post = (props) => {
 
 	return (
 		<div className={classes.post} >
-			<h3>{title}</h3>
-			<p>{body}</p>
+			<h3 data-testid="post_title" >{title}</h3>
+			<p data-testid="post_body" >{body}</p>
 			<hr />
-			<div>
+			<div data-testid="post_tags_list" >
 				{tags.map((tag) => (
 					<Tag key={tag} name={tag} />
 				))}
 			</div>
-			<p className={classes.reactions} >Reactions: {reactions}</p>
+			<p className={classes.reactions} data-testid="post_reactions" >Reactions: {reactions}</p>
 		</div>
 	);
 };
