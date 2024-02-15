@@ -14,6 +14,7 @@ test('should render Tag Component', () => {
     const title = post.getByTestId("tag_name");
 
     expect(title.textContent).toBe(props.name);
+    expect(title.textContent).toBeDefined();
 });
 
 test('should render Post Component', () => {
