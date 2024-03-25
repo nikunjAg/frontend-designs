@@ -12,4 +12,10 @@ export const PAGES = [
 		description: "Demonstrate Infinite Scroll of the posts",
 		previewURL: "src/assets/cards/Infinite_Scroll.png",
 	},
+	{
+		url: "/otp-validator",
+		name: "Otp Validator",
+		description: "Implements OTP receival UI/UX during Sign up",
+		previewURL: "src/assets/cards/Infinite_Scroll.png",
+	},
 ];

@@ -4,6 +4,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const MultiSelectSearchPage = lazy(() => import("./pages/MultiSelectSearchPage"));
 const InfiniteScrollPage = lazy(() => import("./pages/InfiniteScrollPage"));
+const OtpValidatorPage = lazy(() => import("./pages/OtpValidator"));
 
 const router = createBrowserRouter([
     {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
     {
         path: '/infinite-scroll',
         element: <Suspense fallback={<p>Loading...</p>} ><InfiniteScrollPage /></Suspense>
+    },
+    {
+        path: '/otp-validator',
+        element: <Suspense fallback={<p>Loading...</p>} ><OtpValidatorPage /></Suspense>
     },
 ]);
 
