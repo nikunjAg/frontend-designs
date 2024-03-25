@@ -16,6 +16,6 @@ export const PAGES = [
 		url: "/otp-validator",
 		name: "Otp Validator",
 		description: "Implements OTP receival UI/UX during Sign up",
-		previewURL: "src/assets/cards/Infinite_Scroll.png",
+		previewURL: "src/assets/cards/OtpValidator.png",
 	},
 ];

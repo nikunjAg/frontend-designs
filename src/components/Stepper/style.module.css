@@ -1,0 +1,35 @@
+.StepWrapper {
+    margin: 1rem;
+    text-align: left;
+    font-size: .85rem;
+    display: flex;
+    align-items: center;
+}
+
+.Step {
+    color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Step > a {
+    text-decoration: none;
+    color: #5497ca;
+}
+
+.Step > a:hover {
+    text-decoration: underline;
+}
+
+.HomeIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.ArrowRight {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
