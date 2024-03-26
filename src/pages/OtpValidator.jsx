@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import OtpInput from "../components/OtpInput/OtpInput";
-import Stepper from '../components/Stepper/Stepper';
+import Breadcrumbs from '../components/Breadcrumbs/Breadcrumbs';
 
 const CORRECT_OTP = "1789";
 
@@ -18,7 +18,7 @@ export default function OtpValidator() {
   return (
 		<div className="OtpValidator" style={{ textAlign: "center" }}>
 
-      <Stepper />
+      		<Breadcrumbs />
 
 			<h2 style={{ margin: "1rem 0rem" }}>
 				<u>Otp Validator</u>

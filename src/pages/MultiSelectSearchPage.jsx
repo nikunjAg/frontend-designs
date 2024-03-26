@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { MultiSelectSearch } from "../components/MultiSelectSearch";
-import Stepper from "../components/Stepper/Stepper";
+import Breadcrumbs from "../components/Breadcrumbs/Breadcrumbs";
 
 export default function MultiSelectSearchPage() {
   const [items, setItems] = useState([]);
@@ -20,7 +20,7 @@ export default function MultiSelectSearchPage() {
 
   return (
     <div className="App">
-      <Stepper />
+      <Breadcrumbs />
       <MultiSelectSearch items={items} />
       <div style={{ width: '80%', margin: '0 auto' }} >
         <h3><u>Features</u></h3>

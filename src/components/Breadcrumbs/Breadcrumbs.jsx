@@ -11,7 +11,7 @@ const ArrowRightIcon = <img className={classes.ArrowRight} src={arrowRight} alt=
 
 console.log(HomeIcon, ArrowRightIcon);
 
-const Stepper = () => {
+const Breadcrumbs = () => {
 	const { pathname } = useLocation();
 
 	const steps = pathname.split("/");
@@ -19,7 +19,7 @@ const Stepper = () => {
 	let curr_link = "";
 
 	return (
-		<div className={classes.StepWrapper}>
+		<div className={classes.BreadcrumbWrapper}>
 			{steps.length > 1 &&
 				steps.map((step, index) => {
 					const isLast = index === steps.length - 1;
@@ -29,9 +29,9 @@ const Stepper = () => {
 						index === 0 ? HomeIcon : [ArrowRightIcon, toReadableKebabCase(step)];
 
 					return isLast ? (
-						<span key={index} className={classes.Step}>{label}</span>
+						<span key={index} className={classes.Breadcrumb}>{label}</span>
 					) : (
-						<span key={index} className={classes.Step}>
+						<span key={index} className={classes.Breadcrumb}>
 							<Link to={curr_link}>{label}</Link>
 						</span>
 					);
@@ -40,4 +40,4 @@ const Stepper = () => {
 	);
 };
 
-export default Stepper;
+export default Breadcrumbs;

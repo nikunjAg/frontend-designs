@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from "react";
 import InfiniteScroll from "../components/InfiniteScroll";
 import Post from "../components/Post/Post";
 import useThrottle from "../hooks/useThrottle";
-import Stepper from "../components/Stepper/Stepper";
+import Breadcrumbs from "../components/Breadcrumbs/Breadcrumbs";
 
 const fetchData = async (skip = 0, limit = 10) => {
 	const res = await fetch(`https://dummyjson.com/posts?skip=${skip}&limit=${limit}`);
@@ -50,7 +50,7 @@ const InfiniteScrollPage = () => {
   return (
     <div style={{ height: '100vh', display: 'flex', flexDirection: 'column' }} >
 
-      <Stepper />
+      <Breadcrumbs />
       <div style={{ boxShadow: '0px 0px 5px 1px rgba(0,0,0,0.06)', textAlign: 'center', padding: '6px' }} >
         <h3><u>Features</u></h3>
         <ul>

@@ -1,4 +1,4 @@
-.StepWrapper {
+.BreadcrumbWrapper {
     margin: 1rem;
     text-align: left;
     font-size: .85rem;
@@ -6,19 +6,19 @@
     align-items: center;
 }
 
-.Step {
+.Breadcrumb {
     color: #888;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.Step > a {
+.Breadcrumb > a {
     text-decoration: none;
     color: #5497ca;
 }
 
-.Step > a:hover {
+.Breadcrumb > a:hover {
     text-decoration: underline;
 }
 
