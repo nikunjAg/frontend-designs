@@ -17,8 +17,6 @@ const Stepper = (props) => {
 			<ul className={classes.Stepper}>
 				{Array.from({ length: maxSteps }, (_, i) => {
 
-                    
-
                     const isStepActive = step === i+1;
                     const isStepCompleted = step > i+1;
 
