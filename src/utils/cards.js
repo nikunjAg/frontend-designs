@@ -18,4 +18,10 @@ export const PAGES = [
 		description: "Implements OTP receival UI/UX during Sign up",
 		previewURL: "src/assets/cards/OtpValidator.png",
 	},
+	{
+		url: "/stepper",
+		name: "Stepper",
+		description: "Implements Stepper often used in multi-step forms",
+		previewURL: "src/assets/cards/Stepper.png",
+	},
 ];

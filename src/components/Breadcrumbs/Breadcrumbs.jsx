@@ -9,8 +9,6 @@ import arrowRight from "../../assets/icons/ArrowRight.png";
 const HomeIcon = <img className={classes.HomeIcon} src={home} alt="Home" />;
 const ArrowRightIcon = <img className={classes.ArrowRight} src={arrowRight} alt="Arrow Right" />;
 
-console.log(HomeIcon, ArrowRightIcon);
-
 const Breadcrumbs = () => {
 	const { pathname } = useLocation();
 

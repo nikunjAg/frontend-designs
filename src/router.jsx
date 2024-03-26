@@ -5,6 +5,7 @@ const LandingPage = lazy(() => import("./pages/LandingPage"));
 const MultiSelectSearchPage = lazy(() => import("./pages/MultiSelectSearchPage"));
 const InfiniteScrollPage = lazy(() => import("./pages/InfiniteScrollPage"));
 const OtpValidatorPage = lazy(() => import("./pages/OtpValidator"));
+const MultiStepFormPage = lazy(() => import("./pages/MultiStepForm"));
 
 const router = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
     {
         path: '/otp-validator',
         element: <Suspense fallback={<p>Loading...</p>} ><OtpValidatorPage /></Suspense>
+    },
+    {
+        path: '/stepper',
+        element: <Suspense fallback={<p>Loading...</p>} ><MultiStepFormPage /></Suspense>
     },
 ]);
 
